@@ -1,0 +1,21 @@
+test:
+  enabled: true
+  assertion_consumer_service_url: "http://localhost:3000/auth/saml/consume"
+  issuer: "http://localhost:3000"
+  idp_sso_target_url: "https://app.onelogin.com/saml/signon/12345"
+  idp_cert_fingerprint: "90:CC:16:F0:8D:A6:D1:C6:BB:27:2D:BA:93:80:1A:1F:16:8E:4E:08"
+  name_identifier_format: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+development:
+  enabled: true
+  assertion_consumer_service_url: "http://localhost:3000/auth/saml/consume"
+  issuer: "http://localhost:3000"
+  idp_sso_target_url: "https://app.onelogin.com/saml/signon/12345"
+  idp_cert_fingerprint: "90:CC:16:F0:8D:A6:D1:C6:BB:27:2D:BA:93:80:1A:1F:16:8E:4E:08"
+  name_identifier_format: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+production:
+  enabled: true
+  assertion_consumer_service_url: "http://localhost:3000/auth/saml/consume"
+  issuer: "http://localhost:3000"
+  idp_sso_target_url: "https://app.onelogin.com/saml/signon/12345"
+  idp_cert_fingerprint: "90:CC:16:F0:8D:A6:D1:C6:BB:27:2D:BA:93:80:1A:1F:16:8E:4E:08"
+  name_identifier_format: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
