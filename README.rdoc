@@ -1,0 +1,16 @@
+= Redmine SSL auth plugin
+
+This redmine plugin enables authentication using SAML using the Onelogin toolkit for RoR.
+
+== Usage
+
+
+== Notes 
+
+
+== Configuration
+
+
+== Questions
+
+To cvp@fracturecode.com
