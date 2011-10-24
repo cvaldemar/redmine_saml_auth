@@ -8,17 +8,17 @@ NB: Work in progress, but functional, see TODO for where this is heading.
 
 == Installation
 
-1) Install required gems
+1. Install required gems
+  +gem install XMLCanonicalizer+
+  +gem install ruby-saml+
+  
+2. Copy plugin to +vendor/plugins+
 
-<code>
-    gem install XMLCanonicalizer
-    gem install ruby-saml
-</code>
+3. Copy +saml_auth.yml.example+ to +config/saml_auth.yml+
 
-2) Copy plugin to +vendor/plugins+
-3) Copy +saml_auth.yml.example+ to +config/saml_auth.yml+
-4) Configure +saml_auth.yml+ (see below)
-5) Restart webserver/passenger/mongrel_rails
+4. Configure +saml_auth.yml+ (see below)
+
+5. Restart webserver/passenger/mongrel_rails
 
 == Configuration
 
@@ -30,10 +30,12 @@ Patches, fixes or complete rewrites are welcome ;)
 
 == Todo
 
- * Enable/disable plugin from config
- * Disable and redirect /login to identity provider
- * Administration screen in Redmine interface
+* Enable/disable plugin from config
+
+* Disable and redirect /login to identity provider
+
+* Administration screen in Redmine interface
 
 == License and copyright
 
-Copyright (C) 2011 Casper Valdemar Poulsen. License follows Redmine - GNU General Public License v2 (GPL).
+Copyright (c) 2011 Casper Valdemar Poulsen. License follows Redmine - GNU General Public License v2 (GPL).
