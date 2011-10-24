@@ -31,3 +31,7 @@ Patches, fixes or complete rewrites are welcome ;)
  * Enable/disable plugin from config
  * Disable and redirect /login to identity provider
  * Administration screen in Redmine interface
+
+== License and copyright
+
+Copyright (C) 2011 Casper Valdemar Poulsen. License follows Redmine - GNU General Public License v2 (GPL).
