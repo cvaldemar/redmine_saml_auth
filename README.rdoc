@@ -1,16 +1,33 @@
-= Redmine SSL auth plugin
+= Redmine SAML authentication plugin
 
-This redmine plugin enables authentication using SAML using the Onelogin toolkit for RoR.
+This redmine plugin enables SAML authentication using the Onelogin toolkit.
 
-== Usage
+The plugin adds two new routes, for the SAML discovery and consumer actions. The discovery (/auth/saml) initiates the SAML exchange and the consumer (/auth/saml/consumer) recieves the SAML assertion and logs the user in.
 
+NB: Work in progress, but functional, see TODO for where this is heading.
 
-== Notes 
+== Installation
 
+1) Install required gems
+
+    gem install XMLCanonicalizer
+    gem install ruby-saml
+
+2) Copy plugin to vendor/plugins
+3) Copy saml_auth.yml.example to config/saml_auth.yml
+4) Configure saml_auth.yml (see below)
+5) Restart webserver/passenger/mongrel
 
 == Configuration
 
+Open saml_auth.yml and set up the plugin, a sample configuration is provided. Restart passenger/mongrel after changes to configuration.
 
-== Questions
+== Notes
 
-To cvp@fracturecode.com
+Patches, fixes or complete rewrites are welcome ;)
+
+== Todo
+
+ * Enable/disable plugin from config
+ * Disable and redirect /login to identity provider
+ * Administration screen in Redmine interface
