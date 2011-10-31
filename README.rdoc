@@ -20,6 +20,11 @@ NB: Work in progress, but functional, see TODO for where this is heading.
 
 Open +saml_auth.yml+ and set up the plugin, a sample configuration is provided. Restart passenger/mongrel after changes to configuration.
 
+Use the following routes to configure your IdP
+
+* Login: redmine.example.com:3000/auth/saml
+* Consumer: redmine.example.com:3000/auth/saml/consume
+
 == Notes
 
 Patches, fixes or complete rewrites are welcome ;)
